@@ -1,0 +1,27 @@
+[
+  {
+    "source":"Lizzie Stansfield ",
+    "target":"Sam Griffin ",
+    "type ":"slept_with"
+  },
+  {
+    "source":"Lizzie Stansfield ",
+    "target":"Oscar Shepherd",
+    "type ":"dated"
+  },
+  {
+    "source":"Lizzie Stansfield ",
+    "target":"Ben Jiggle ",
+    "type ":"pulled"
+  },
+  {
+    "source":"Sam Griffin",
+    "target":"Ben Jiggle ",
+    "type ":"slept_with"
+  },
+  {
+    "source":"Oscar Shepherd",
+    "target":"Chloe Cracknell ",
+    "type ":"pulled"
+  }
+]
