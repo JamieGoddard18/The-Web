@@ -1,3 +1,4 @@
+// Get Web
 fetch('graph-data.json')
   .then(response => response.json())
   .then(data => {
@@ -6,16 +7,18 @@ fetch('graph-data.json')
     const addedEdges = new Set();
 
     data.forEach(row => {
-      const source = row.source.trim();
-      const target = row.target.trim();
-      const type = row['type ']?.trim() || row.type?.trim() || '';
+      const source = row.from?.trim?.() || null;
+      const target = row.to?.trim?.() || null;
+      const type = row['type ']?.trim?.() || row.type?.trim?.() || '';
+      const group_from = row.group_from?.trim?.() || '';
+      const group_to = row.group_to?.trim?.() || '';
 
       if (!addedNodes.has(source)) {
-        elements.push({ data: { id: source } });
+        elements.push({ data: { id: source, group: group_from } });
         addedNodes.add(source);
       }
       if (!addedNodes.has(target)) {
-        elements.push({ data: { id: target } });
+        elements.push({ data: { id: target, group: group_to } });
         addedNodes.add(target);
       }
 
@@ -59,7 +62,7 @@ function renderGraph(elements) {
           'label': 'data(id)',
           'text-valign': 'center',
           'text-halign': 'center',
-          'background-color': '#A9F081',
+          'background-color': 'pink',
           'border-color': 'black',
           'border-width': 0.5,
           'color': 'white',
@@ -88,7 +91,10 @@ function renderGraph(elements) {
       },
       { selector: 'edge[type="slept_with"]', style: { 'line-color': 'blue' } },
       { selector: 'edge[type="pulled"]', style: { 'line-color': 'green' } },
-      { selector: 'edge[type="dated"]', style: { 'line-color': 'red' } }
+      { selector: 'edge[type="dated"]', style: { 'line-color': 'red' } },
+      { selector: 'node[group="euoc"]', style: { 'background-color': 'white' } },
+      { selector: 'node[group="hh"]', style: { 'background-color': 'green' } },
+      { selector: 'node[group="o"]', style: { 'background-color': 'yellow' } },
     ],
 
     layout: Object.keys(savedPositions).length > 0
@@ -100,7 +106,7 @@ function renderGraph(elements) {
   cy.once('layoutstop', () => {
     cy.fit(40);
     const bounds = cy.extent();
-    const padding = 100;
+    const padding = -200;
     let raf = null;
 
     cy.on('pan', () => {
@@ -128,7 +134,10 @@ function renderGraph(elements) {
     });
   });
 
-  // Save button handler
+  
+}
+
+// Save button handler
   document.getElementById('save-layout-btn').addEventListener('click', () => {
     const positions = {};
     cy.nodes().forEach(node => {
@@ -137,7 +146,6 @@ function renderGraph(elements) {
     localStorage.setItem('graphLayoutPositions', JSON.stringify(positions));
     alert("Layout saved!");
   });
-}
 
 // Delete button handler
 document.getElementById('delete-layout-btn').addEventListener('click', () => {
@@ -145,64 +153,5 @@ document.getElementById('delete-layout-btn').addEventListener('click', () => {
     alert("Saved layout deleted. Reload the page to reset layout.");
 });
 
-// Download 
-document.getElementById('download-layout-btn').addEventListener('click', () => {
-  const positions = {};
-  cy.nodes().forEach(node => {
-    positions[node.id()] = node.position();
- });
 
-  const blob = new Blob([JSON.stringify(positions, null, 2)], { type: 'application/json' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = 'layout.json';
-  a.click();
-  URL.revokeObjectURL(url);
-});
-
-// Download layout
-document.getElementById('save-layout-btn').addEventListener('click', () => {
-  const positions = {};
-  cy.nodes().forEach(node => {
-    positions[node.id()] = node.position();
-  });
-
-  const blob = new Blob([JSON.stringify(positions, null, 2)], { type: 'application/json' });
-  const url = URL.createObjectURL(blob);
-
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = 'graph-layout.json';
-  a.click();
-  URL.revokeObjectURL(url);
-});
-
-// Trigger upload
-document.getElementById('upload-layout-btn').addEventListener('click', () => {
-  document.getElementById('layout-file-input').click();
-});
-
-// Handle uploaded file
-document.getElementById('layout-file-input').addEventListener('change', event => {
-  const file = event.target.files[0];
-  if (!file) return;
-
-  const reader = new FileReader();
-  reader.onload = function (e) {
-    try {
-      const savedPositions = JSON.parse(e.target.result);
-      cy.nodes().forEach(node => {
-        const pos = savedPositions[node.id()];
-        if (pos) {
-          node.position(pos);
-        }
-      });
-      cy.layout({ name: 'preset' }).run();
-    } catch (err) {
-      alert('Failed to load layout: ' + err.message);
-    }
-  };
-  reader.readAsText(file);
-});
 

@@ -1,27 +1,352 @@
 [
   {
-    "source":"Lizzie Stansfield ",
-    "target":"Sam Griffin ",
-    "type ":"slept_with"
+    "from":"Lizzie Stansfield ",
+    "to":"Sam Griffin ",
+    "type":"slept_with",
+    "group_from":"euoc",
+    "group_to":"euoc"
   },
   {
-    "source":"Lizzie Stansfield ",
-    "target":"Oscar Shepherd",
-    "type ":"dated"
+    "from":"Lizzie Stansfield ",
+    "to":"Oscar Shepherd",
+    "type":"dated",
+    "group_from":"euoc",
+    "group_to":"euoc"
   },
   {
-    "source":"Lizzie Stansfield ",
-    "target":"Ben Jiggle ",
-    "type ":"pulled"
+    "from":"Lizzie Stansfield ",
+    "to":"Alistair Thomas ",
+    "type":"pulled",
+    "group_from":"euoc",
+    "group_to":"euoc"
   },
   {
-    "source":"Sam Griffin",
-    "target":"Ben Jiggle ",
-    "type ":"slept_with"
+    "from":"Lizzie Stansfield ",
+    "to":"Joe Hudd",
+    "type":"dated",
+    "group_from":"euoc",
+    "group_to":"euoc"
   },
   {
-    "source":"Oscar Shepherd",
-    "target":"Chloe Cracknell ",
-    "type ":"pulled"
+    "from":"Lizzie Stansfield ",
+    "to":"Boyan Ivandjikov",
+    "type":"pulled",
+    "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Lizzie Stansfield ",
+    "to":"Alex Weatheril ",
+    "type":"pulled",
+    "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Lizzie Stansfield ",
+    "to":"Jim Bailey",
+    "type":"pulled",
+    "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Lizzie Stansfield ",
+    "to":"Louis Morris",
+    "type":"slept_with",
+    "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Sam Griffin ",
+    "to":"Lizzie Stansfield ",
+    "type":"slept_with",
+    "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Sam Griffin ",
+    "to":"Lucy Haines ",
+    "type":"slept_with",
+    "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Sam Griffin ",
+    "to":"Sarah Calvert ",
+    "type":"slept_with",
+    "group_from":"euoc",
+    "group_to":"hh"
+  },
+  {
+    "from":"Sam Griffin ",
+    "to":"Imogen Pieters ",
+    "type":"slept_with",
+    "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Sam Griffin ",
+    "to":"Pippa Carcas ",
+    "type":"pulled",
+    "group_from":"euoc",
+    "group_to":"o"
+  },
+  {
+    "from":"Sam Griffin ",
+    "to":"Jess Ensoll ",
+    "type":"pulled",
+    "group_from":"euoc",
+    "group_to":"hh"
+  },
+  {
+    "from":"Sam Griffin ",
+    "to":"Lizzie Horsler ",
+    "type":"dated",
+    "group_from":"euoc",
+    "group_to":"o"
+  },
+  {
+    "from":"Jim Bailey",
+    "to":"Lizzie Stansfield ",
+    "type":"pulled",
+    "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Jim Bailey",
+    "to":"Geogia Leadingham ",
+    "type":"dated",
+    "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Jim Bailey",
+    "to":"Nea Shingler ",
+    "type":"dated",
+    "group_from":"euoc",
+    "group_to":"o"
+  },
+  {
+    "from":"Jim Bailey",
+    "to":"Louise Adams",
+    "type":"slept_with",
+    "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Jim Bailey",
+    "to":"Izzy Cox",
+    "type":"pulled",
+    "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Jamie Goddard",
+    "to":"Daisy McNamara",
+    "type":"dated",
+    "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"David Bunn",
+    "to":"Louise Adams",
+    "type":"pulled",
+    "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"David Bunn",
+    "to":"Geogia Leadingham ",
+    "type":"dated",
+    "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"David Bunn",
+    "to":"Alice Goodall",
+    "type":"dated",
+    "group_from":"euoc",
+    "group_to":"hh"
+  },
+  {
+    "from":"David Bunn",
+    "to":"Grace Pow",
+    "type":"pulled",
+    "group_from":"euoc",
+    "group_to":"hh"
+  },
+  {
+    "from":"David Bunn",
+    "to":"Niamh Carr",
+    "type":"pulled",
+    "group_from":"euoc",
+    "group_to":"hh"
+  },
+  {
+    "from":"Louis Morris ",
+    "to":"Sarah Calvert ",
+    "type":"dated",
+    "group_from":"euoc",
+    "group_to":"hh"
+  },
+  {
+    "from":"Louis Morris ",
+    "to":"Jess Ensoll ",
+    "type":"dated",
+    "group_from":"euoc",
+    "group_to":"hh"
+  },
+  {
+    "from":"Louis Morris ",
+    "to":"Louise Adams",
+    "type":"dated",
+    "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Louis Morris ",
+    "to":"Lizzie Stansfield ",
+    "type":"slept_with",
+    "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Louis Morris ",
+    "to":"Izzy Cox",
+    "type":"slept_with",
+    "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Boyan Ivandjikov",
+    "to":"Lizzie Stansfield ",
+    "type":"pulled",
+    "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Boyan Ivandjikov",
+    "to":"Pippa Carcas ",
+    "type":"pulled",
+    "group_from":null,
+    "group_to":"o"
+  },
+  {
+    "from":"Boyan Ivandjikov",
+    "to":"Grace Pow",
+    "type":"pulled",
+    "group_from":null,
+    "group_to":"hh"
+  },
+  {
+    "from":"Boyan Ivandjikov",
+    "to":"Louise Adams",
+    "type":"pulled",
+    "group_from":null,
+    "group_to":"euoc"
+  },
+  {
+    "from":"Lizzie Horsler",
+    "to":"Sam Griffin ",
+    "type":"dated",
+    "group_from":"o",
+    "group_to":null
+  },
+  {
+    "from":"Lizzie Horsler",
+    "to":"Joe Hudd",
+    "type":"slept_with",
+    "group_from":null,
+    "group_to":null
+  },
+  {
+    "from":"Joe Hudd",
+    "to":"Pippa Carcas ",
+    "type":"dated",
+    "group_from":"euoc",
+    "group_to":null
+  },
+  {
+    "from":"Joe Hudd",
+    "to":"Lizzie Stansfield ",
+    "type":"dated",
+    "group_from":null,
+    "group_to":null
+  },
+  {
+    "from":"Joe Hudd",
+    "to":"Lizzie Horsler ",
+    "type":"slept_with",
+    "group_from":null,
+    "group_to":null
+  },
+  {
+    "from":"Joe Hudd",
+    "to":"Chloe Cracknell",
+    "type":"pulled",
+    "group_from":null,
+    "group_to":"euoc"
+  },
+  {
+    "from":"Joe Hudd",
+    "to":"Izzy Cox",
+    "type":"pulled",
+    "group_from":null,
+    "group_to":null
+  },
+  {
+    "from":"Louise Adams",
+    "to":"Alex Carcas",
+    "type":"dated",
+    "group_from":null,
+    "group_to":"euoc"
+  },
+  {
+    "from":"Louise Adams",
+    "to":"Alistair Thomas ",
+    "type":"pulled",
+    "group_from":null,
+    "group_to":null
+  },
+  {
+    "from":"Sarah Calvert",
+    "to":"Frank Townley",
+    "type":"pulled",
+    "group_from":null,
+    "group_to":"euoc"
+  },
+  {
+    "from":"Sarah Calvert",
+    "to":"Finn Lydon",
+    "type":"pulled",
+    "group_from":null,
+    "group_to":"euoc"
+  },
+  {
+    "from":"Sarah Calvert",
+    "to":"Felix Wilson",
+    "type":"pulled",
+    "group_from":null,
+    "group_to":"euoc"
+  },
+  {
+    "from":"Frank Townley",
+    "to":"Niamh Hunter",
+    "type":"dated",
+    "group_from":null,
+    "group_to":"euoc"
+  },
+  {
+    "from":"Frank Townley",
+    "to":"Izzy Cox",
+    "type":"slept_with",
+    "group_from":null,
+    "group_to":null
+  },
+  {
+    "from":"Frank Townley",
+    "to":"Rachael Collins",
+    "type":"pulled",
+    "group_from":null,
+    "group_to":"euoc"
   }
 ]
