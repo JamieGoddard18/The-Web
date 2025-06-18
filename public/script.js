@@ -107,8 +107,8 @@ function renderGraph(elements) {
       { selector: 'edge[type="pulled"]', style: { 'line-color': '#46a64e' } },
       { selector: 'edge[type="dated"]', style: { 'line-color': '#ff2424' } },
       { selector: 'node[group="euoc"]', style: { 'background-color': 'white' } },
-      { selector: 'node[group="hh"]', style: { 'background-color': 'green' } },
-      { selector: 'node[group="o"]', style: { 'background-color': 'yellow' } }
+      { selector: 'node[group="hh"]', style: { 'background-color': '#88e788' } },
+      { selector: 'node[group="o"]', style: { 'background-color': '#FFEE8C' } }
     ]
   });
 
