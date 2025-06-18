@@ -36,7 +36,7 @@
   },
   {
     "from":"Lizzie Stansfield ",
-    "to":"Alex Weatheril ",
+    "to":"Alex Wetherill",
     "type":"pulled",
     "group_from":"euoc",
     "group_to":"euoc"
@@ -348,5 +348,19 @@
     "type":"pulled",
     "group_from":null,
     "group_to":"euoc"
+  },
+  {
+    "from":"Oscar Shepherd",
+    "to":"Chloe Cracknell",
+    "type":"pulled",
+    "group_from":null,
+    "group_to":null
+  },
+  {
+    "from":"Oscar Shepherd",
+    "to":"Alison Bell",
+    "type":"pulled",
+    "group_from":null,
+    "group_to":"hh"
   }
 ]

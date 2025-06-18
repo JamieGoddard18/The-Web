@@ -6,12 +6,12 @@ app.use(express.json());
 
 const LAYOUT_PATH = path.join(__dirname, 'layout.json');
 
-app.use(express.static('public')); // serve your frontend files
+app.use(express.static('public')); 
 
 app.get('/layout', (req, res) => {
   fs.readFile(LAYOUT_PATH, 'utf8', (err, data) => {
     if (err) {
-      return res.json({}); // no layout yet
+      return res.json({}); 
     }
     res.type('json').send(data);
   });

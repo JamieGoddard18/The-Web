@@ -69,25 +69,28 @@ function renderGraph(elements) {
     style: [
       {
         selector: 'node',
-        style: {
-          'label': 'data(id)',
-          'text-valign': 'center',
-          'text-halign': 'center',
-          'background-color': 'pink',
-          'border-color': 'black',
-          'border-width': 0.5,
-          'color': 'white',
-          'font-size': 5,
-          'text-outline-color': 'black',
-          'text-outline-width': 0.75,
-          'transition-property': 'background-color, line-color',
-          'transition-duration': '0.5s'
-        }
+  style: {
+    'label': 'data(id)',
+    'text-valign': 'center',
+    'text-halign': 'center',
+    'background-color': 'pink',
+    'border-color': 'black',
+    'border-width': 0.5,
+    'color': '#ffffff', 
+    'font-size': 5,
+    'font-weight': 'bold', 
+    'text-outline-color': '#000000', 
+    'text-outline-width': 1, 
+    'text-wrap': 'wrap',
+    'text-max-width': 80, 
+    'transition-property': 'background-color, line-color',
+    'transition-duration': '0.5s'
+  }
       },
       {
         selector: 'edge',
         style: {
-          'width': 2,
+          'width': 1.5,
           'curve-style': 'bezier',
           'line-color': '#a974ff',
           'target-arrow-color': '#a974ff',
