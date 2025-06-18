@@ -61,7 +61,7 @@ function renderGraph(elements) {
   cy = cytoscape({
     container: document.getElementById('cy'),
     elements,
-    minZoom: 2,
+    minZoom: 1.5,
     maxZoom: 5,
     wheelSensitivity: 0.2,
     layout: { name: layoutName },
@@ -103,9 +103,9 @@ function renderGraph(elements) {
           'color': '#ddd'
         }
       },
-      { selector: 'edge[type="slept_with"]', style: { 'line-color': 'blue' } },
-      { selector: 'edge[type="pulled"]', style: { 'line-color': 'green' } },
-      { selector: 'edge[type="dated"]', style: { 'line-color': 'red' } },
+      { selector: 'edge[type="slept_with"]', style: { 'line-color': '#3070b3' } },
+      { selector: 'edge[type="pulled"]', style: { 'line-color': '#46a64e' } },
+      { selector: 'edge[type="dated"]', style: { 'line-color': '#ff2424' } },
       { selector: 'node[group="euoc"]', style: { 'background-color': 'white' } },
       { selector: 'node[group="hh"]', style: { 'background-color': 'green' } },
       { selector: 'node[group="o"]', style: { 'background-color': 'yellow' } }
