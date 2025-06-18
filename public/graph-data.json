@@ -430,8 +430,8 @@
     "from":"Grace Malloy",
     "to":"Eddie Narbett",
     "type":"slept_with",
-    "group_from":null,
-    "group_to":"o"
+    "group_from":"o",
+    "group_to":null
   },
   {
     "from":"Grace Malloy",
@@ -473,7 +473,7 @@
     "to":"Ellie Bailes ",
     "type":"dated",
     "group_from":null,
-    "group_to":null
+    "group_to":"euoc"
   },
   {
     "from":"Tom Lines",
