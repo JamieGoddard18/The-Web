@@ -160,9 +160,13 @@ document.getElementById('save-layout-btn')?.addEventListener('click', () => {
     body: JSON.stringify(positions)
   })
   .then(res => {
-    if (!res.ok) throw new Error('Failed to save');
+    if (!res.ok){  
+      alert('Failed to save layout.');
+      throw new Error('Failed to save');
+    }
+    else{
+      alert('Layout saved!');
+    }
     return res.json();
   })
-  .then(() => alert('Layout saved!'))
-  .catch(() => alert('Failed to save layout.'));
 });
