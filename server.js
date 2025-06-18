@@ -13,7 +13,7 @@ app.get('/layout', (req, res) => {
     if (err) {
       return res.json({}); 
     }
-    res.type('json').send(data);
+    res.type('json').send(data);/// huh
   });
 });
 
