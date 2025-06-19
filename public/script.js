@@ -1,12 +1,9 @@
-let cy; // Declare Cytoscape instance globally
+let cy;
 
-// Get Graph Data and Layout from Backend
+// Fetch data and saved layout
 Promise.all([
   fetch('graph-data.json').then(res => res.json()),
-  fetch('/layout').then(res => {
-    if (!res.ok) return {};
-    return res.json();
-  })
+  fetch('/layout').then(res => res.ok ? res.json() : {})
 ]).then(([data, savedPositions]) => {
   const elements = [];
   const addedNodes = new Set();
@@ -53,39 +50,49 @@ Promise.all([
 });
 
 function renderGraph(elements) {
-  // Check if any node has a position defined
-  const hasPositions = elements.some(ele => ele.position && ele.position.x !== undefined && ele.position.y !== undefined);
-
-  const layoutName = hasPositions ? 'preset' : 'cose';
+  const hasPositions = elements.some(ele => ele.position?.x !== undefined);
 
   cy = cytoscape({
     container: document.getElementById('cy'),
     elements,
-    minZoom: 1.5,
+    minZoom: 0.5,
     maxZoom: 5,
     wheelSensitivity: 0.2,
-    layout: { name: layoutName },
+
+    layout: hasPositions
+  ? { name: 'preset' }
+  : {
+      name: 'fcose',
+        quality: 'default',
+        randomize: true,
+        nodeSeparation: 150,
+        nodeRepulsion: 450000,
+        idealEdgeLength: 120,
+        edgeElasticity: 0.2,
+        gravity: 0.3,
+        animate: true,
+        animationDuration: 1000,
+        fit: true
+    },
 
     style: [
       {
         selector: 'node',
-  style: {
-    'label': 'data(id)',
-    'text-valign': 'center',
-    'text-halign': 'center',
-    'background-color': 'pink',
-    'border-color': 'black',
-    'border-width': 0.5,
-    'color': '#ffffff', 
-    'font-size': 5,
-    'font-weight': 'bold', 
-    'text-outline-color': '#000000', 
-    'text-outline-width': 1, 
-    'text-wrap': 'wrap',
-    'text-max-width': 80, 
-    'transition-property': 'background-color, line-color',
-    'transition-duration': '0.5s'
-  }
+        style: {
+          'label': 'data(id)',
+          'text-valign': 'center',
+          'text-halign': 'center',
+          'background-color': 'pink',
+          'border-color': 'black',
+          'border-width': 0.5,
+          'color': '#ffffff',
+          'font-size': 5,
+          'font-weight': 'bold',
+          'text-outline-color': '#000000',
+          'text-outline-width': 1,
+          'text-wrap': 'wrap',
+          'text-max-width': 80
+        }
       },
       {
         selector: 'edge',
@@ -93,14 +100,13 @@ function renderGraph(elements) {
           'width': 1.5,
           'curve-style': 'bezier',
           'line-color': '#a974ff',
-          'target-arrow-color': '#a974ff',
           'target-arrow-shape': 'none',
+          'color': '#ddd',
           'font-size': 10,
           'text-background-color': '#1a0033',
           'text-background-opacity': 0.7,
           'text-background-padding': 3,
-          'text-background-shape': 'roundrectangle',
-          'color': '#ddd'
+          'text-background-shape': 'roundrectangle'
         }
       },
       { selector: 'edge[type="slept_with"]', style: { 'line-color': '#3070b3' } },
@@ -112,40 +118,12 @@ function renderGraph(elements) {
     ]
   });
 
-  // Clamp pan to bounding box
   cy.once('layoutstop', () => {
     cy.fit(40);
-    const bounds = cy.extent();
-    const padding = -200;
-    let raf = null;
-
-    cy.on('pan', () => {
-      if (raf) return;
-      raf = requestAnimationFrame(() => {
-        const zoom = cy.zoom();
-        const pan = cy.pan();
-        const container = cy.container().getBoundingClientRect();
-        const width = container.width / zoom;
-        const height = container.height / zoom;
-
-        const minX = -bounds.x2 + padding;
-        const maxX = -bounds.x1 + width - padding;
-        const minY = -bounds.y2 + padding;
-        const maxY = -bounds.y1 + height - padding;
-
-        const newPan = {
-          x: Math.max(Math.min(pan.x, maxX), minX),
-          y: Math.max(Math.min(pan.y, maxY), minY)
-        };
-
-        cy.pan(newPan);
-        raf = null;
-      });
-    });
   });
 }
 
-// Save layout to backend
+// Save layout
 document.getElementById('save-layout-btn')?.addEventListener('click', () => {
   if (!cy) return alert('Graph not loaded yet.');
 
@@ -159,14 +137,9 @@ document.getElementById('save-layout-btn')?.addEventListener('click', () => {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(positions)
   })
-  .then(res => {
-    if (!res.ok){  
-      alert('Failed to save layout.');
-      throw new Error('Failed to save');
-    }
-    else{
+    .then(res => {
+      if (!res.ok) throw new Error('Failed to save');
       alert('Layout saved!');
-    }
-    return res.json();
-  })
+    })
+    .catch(() => alert('Failed to save layout.'));
 });

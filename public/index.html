@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <meta charset="UTF-8" />
-  <title>The-Web by The Start Up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Graph Viewer</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://unpkg.com/cytoscape@3.24.0/dist/cytoscape.min.js"></script>
+
+  <!-- Cytoscape.js -->
+  <script src="https://unpkg.com/cytoscape@3.26.0/dist/cytoscape.min.js"></script>
+
+  <!-- fCoSE layout extension -->
+  <script src="https://unpkg.com/layout-base/layout-base.js"></script>
+  <script src="https://unpkg.com/cose-base/cose-base.js"></script>
+  <script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+
+  <script>
+    cytoscape.use(cytoscapeFcose);
+  </script>
 </head>
 <body>
   <h1>The-Web by The Start Up™</h1>
+
   <div id="cy"></div>
 
   <div class="button-container">
