@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Graph Viewer</title>
   <link rel="stylesheet" href="style.css" />
 
@@ -20,8 +20,15 @@
 </head>
 <body>
   <h1>The-Web by The Start Up™</h1>
-
-  <div id="cy"></div>
+  <div id="cy-container">
+    <div id="cy"></div>
+    <div id="legend">
+      <div><span class="legend-color slept_with"></span> Slept With</div>
+      <div><span class="legend-color pulled"></span> Pulled</div>
+      <div><span class="legend-color dated"></span> Dated</div>
+      <div><span class="legend-color hong_dong"></span> Hong Dong</div>
+    </div>
+  </div>
 
   <div class="button-container">
     <button id="save-layout-btn">Save Layout</button>

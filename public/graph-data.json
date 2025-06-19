@@ -505,7 +505,7 @@
   },
   {
     "from":"Tom Lines",
-    "to":"Ellie Bailes ",
+    "to":"Ellie Bales",
     "type":"dated",
     "group_from":"euoc",
     "group_to":"euoc"
@@ -687,7 +687,7 @@
   },
   {
     "from":"Joe Wright",
-    "to":"Ellie Bailes ",
+    "to":"Ellie Bales",
     "type":"pulled",
     "group_from":"euoc",
     "group_to":"euoc"
@@ -1029,11 +1029,11 @@
     "group_to":"euoc"
   },
   {
-    "from":"Daisy Mcnamara",
+    "from":"Daisy McNamara",
     "to":"CITPA",
     "type":"dated",
     "group_from":"euoc",
-    "group_to":"stuoc"
+    "group_to":"o"
   },
   {
     "from":"Peter Molloy",
@@ -1486,7 +1486,7 @@
   {
     "from":"Nogger Bennet",
     "to":"Pippa Carcas ",
-    "type":"hong dong",
+    "type":"hong_dong",
     "group_from":"euoc",
     "group_to":"o"
   },

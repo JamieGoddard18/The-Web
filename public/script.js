@@ -112,9 +112,11 @@ function renderGraph(elements) {
       { selector: 'edge[type="slept_with"]', style: { 'line-color': '#3070b3' } },
       { selector: 'edge[type="pulled"]', style: { 'line-color': '#46a64e' } },
       { selector: 'edge[type="dated"]', style: { 'line-color': '#ff2424' } },
+      { selector: 'edge[type="hong_dong"]', style: { 'line-color': '#FF69B4' } },
       { selector: 'node[group="euoc"]', style: { 'background-color': 'white' } },
       { selector: 'node[group="hh"]', style: { 'background-color': '#88e788' } },
       { selector: 'node[group="o"]', style: { 'background-color': '#FFEE8C' } }
+
     ]
   });
 
