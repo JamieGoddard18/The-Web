@@ -3,7 +3,7 @@ let cy;
 // Fetch data and saved layout
 Promise.all([
   fetch('graph-data.json').then(res => res.json()),
-  fetch('/layout').then(res => res.ok ? res.json() : {})
+  fetch('layout.json').then(res => res.ok ? res.json() : {})  // <- load layout.json file
 ]).then(([data, savedPositions]) => {
   const elements = [];
   const addedNodes = new Set();
@@ -60,20 +60,20 @@ function renderGraph(elements) {
     wheelSensitivity: 0.2,
 
     layout: hasPositions
-  ? { name: 'preset' }
-  : {
-      name: 'fcose',
-        quality: 'default',
-        randomize: true,
-        nodeSeparation: 150,
-        nodeRepulsion: 450000,
-        idealEdgeLength: 120,
-        edgeElasticity: 0.2,
-        gravity: 0.3,
-        animate: true,
-        animationDuration: 1000,
-        fit: true
-    },
+      ? { name: 'preset' }
+      : {
+          name: 'fcose',
+          quality: 'default',
+          randomize: true,
+          nodeSeparation: 150,
+          nodeRepulsion: 450000,
+          idealEdgeLength: 120,
+          edgeElasticity: 0.2,
+          gravity: 0.3,
+          animate: true,
+          animationDuration: 1000,
+          fit: true
+        },
 
     style: [
       {
@@ -116,7 +116,6 @@ function renderGraph(elements) {
       { selector: 'node[group="euoc"]', style: { 'background-color': 'white' } },
       { selector: 'node[group="hh"]', style: { 'background-color': '#88e788' } },
       { selector: 'node[group="o"]', style: { 'background-color': '#FFEE8C' } }
-
     ]
   });
 
@@ -125,23 +124,10 @@ function renderGraph(elements) {
   });
 }
 
-// Save layout
-document.getElementById('save-layout-btn')?.addEventListener('click', () => {
-  if (!cy) return alert('Graph not loaded yet.');
-
-  const positions = {};
-  cy.nodes().forEach(node => {
-    positions[node.id()] = node.position();
+// Disable Save Layout button or alert user that saving is unavailable on GitHub Pages
+const saveBtn = document.getElementById('save-layout-btn');
+if (saveBtn) {
+  saveBtn.addEventListener('click', () => {
+    alert('Saving layout is not supported on this site.');
   });
-
-  fetch('/layout', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(positions)
-  })
-    .then(res => {
-      if (!res.ok) throw new Error('Failed to save');
-      alert('Layout saved!');
-    })
-    .catch(() => alert('Failed to save layout.'));
-});
+}
