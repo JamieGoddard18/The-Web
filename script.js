@@ -1,6 +1,6 @@
 let cy;
 
-// Fetch graph data and optional saved layout
+// Fetch graph data and optional aved layout
 Promise.all([
   fetch('graph-data.json').then(res => res.json()),
   fetch('layout.json').then(res => res.ok ? res.json() : {})
