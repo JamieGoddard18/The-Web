@@ -1,20 +1,20 @@
 let cy;
 
-// Fetch data and saved layout
+// Fetch graph data and optional saved layout
 Promise.all([
   fetch('graph-data.json').then(res => res.json()),
-  fetch('layout.json').then(res => res.ok ? res.json() : {})  // <- load layout.json file
+  fetch('layout.json').then(res => res.ok ? res.json() : {})
 ]).then(([data, savedPositions]) => {
   const elements = [];
   const addedNodes = new Set();
   const addedEdges = new Set();
 
   data.forEach(row => {
-    const source = row.from?.trim?.() || null;
-    const target = row.to?.trim?.() || null;
-    const type = row['type ']?.trim?.() || row.type?.trim?.() || '';
-    const group_from = row.group_from?.trim?.() || '';
-    const group_to = row.group_to?.trim?.() || '';
+    const source = String(row.from || '').trim();
+    const target = String(row.to || '').trim();
+    const type = String(row['type '] || row.type || '').trim();
+    const group_from = String(row.group_from || '').trim();
+    const group_to = String(row.group_to || '').trim();
 
     if (source && !addedNodes.has(source)) {
       elements.push({
@@ -32,17 +32,18 @@ Promise.all([
       addedNodes.add(target);
     }
 
-    if (source && target &&
-        !addedEdges.has(source + target) &&
-        !addedEdges.has(target + source)) {
+    const edgeKey = source + '->' + target;
+    const reverseKey = target + '->' + source;
+
+    if (source && target && !addedEdges.has(edgeKey) && !addedEdges.has(reverseKey)) {
       elements.push({
         data: {
-          source: source,
-          target: target,
-          type: type
+          source,
+          target,
+          type
         }
       });
-      addedEdges.add(source + target);
+      addedEdges.add(edgeKey);
     }
   });
 
@@ -124,10 +125,32 @@ function renderGraph(elements) {
   });
 }
 
-// Disable Save Layout button or alert user that saving is unavailable on GitHub Pages
+// Save layout to layout.json file
 const saveBtn = document.getElementById('save-layout-btn');
 if (saveBtn) {
+  saveBtn.style.display = 'inline-block'; // Ensure it's visible if hidden by CSS
+
   saveBtn.addEventListener('click', () => {
-    alert('Saving layout is not supported on this site.');
+    if (!cy) {
+      alert('Graph not initialized');
+      return;
+    }
+
+    const layoutData = {};
+    cy.nodes().forEach(node => {
+      const pos = node.position();
+      layoutData[node.id()] = { x: pos.x, y: pos.y };
+    });
+
+    const json = JSON.stringify(layoutData, null, 2);
+    const blob = new Blob([json], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'layout.json';
+    a.click();
+
+    URL.revokeObjectURL(url);
   });
 }
