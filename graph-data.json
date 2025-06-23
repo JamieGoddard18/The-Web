@@ -372,7 +372,7 @@
   },
   {
     "from":"Oscar Shepherd",
-    "to":"Alison Bell",
+    "to":"Alisson Bell",
     "type":"pulled",
     "group_from":"euoc",
     "group_to":"hh"
@@ -435,7 +435,7 @@
   },
   {
     "from":"Lucy Haines",
-    "to":"Sasha Cheplin",
+    "to":"Sasha Chepelin",
     "type":"dated",
     "group_from":"euoc",
     "group_to":"euoc"
@@ -1043,7 +1043,7 @@
     "group_to":"euoc"
   },
   {
-    "from":"Louis McMillan",
+    "from":"Louis MacMillan",
     "to":"Alice Wilson",
     "type":"pulled",
     "group_from":"euoc",
@@ -1113,7 +1113,7 @@
     "group_to":"euoc"
   },
   {
-    "from":"Gay Barber",
+    "from":"Dan Barber",
     "to":"Stan Heap",
     "type":"pulled",
     "group_from":"euoc",
@@ -1514,6 +1514,20 @@
   {
     "from":"Dan O'Riordan",
     "to":"Heidi Robertshaw",
+    "type":"slept_with",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Dan O'Riordan",
+    "to":"Maja Thomson",
+    "type":"pulled",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Euan Patton",
+    "to":"Maja Thomson",
     "type":"slept_with",
     "group_from":"hh",
     "group_to":"hh"

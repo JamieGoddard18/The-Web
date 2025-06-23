@@ -97,7 +97,10 @@ sup.trademark {
 }
 
 .legend-color.hong_dong {
-  background-color: #FF69B4; /* Orange example */
+  background-color: #FF69B4; 
+}
+.legend-color.strava_rizz {
+  background-color: orange; 
 }
 
 .button-container {
@@ -124,11 +127,11 @@ button:hover {
   background-color: #388e3c;
 }
 
-#save-layout-btn {
+/*#save-layout-btn {
   display: none;
 }
 
 
 .button-container {
   display: none;
-}
+}*/

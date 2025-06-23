@@ -1,6 +1,6 @@
 let cy;
 
-// Fetch graph data and optional aved layout
+// Load graph data and optional saved layout
 Promise.all([
   fetch('graph-data.json').then(res => res.json()),
   fetch('layout.json').then(res => res.ok ? res.json() : {})
@@ -16,9 +16,15 @@ Promise.all([
     const group_from = String(row.group_from || '').trim();
     const group_to = String(row.group_to || '').trim();
 
+    const formatLabel = name => name.replace(/\s+/, '\n');
+
     if (source && !addedNodes.has(source)) {
       elements.push({
-        data: { id: source, group: group_from },
+        data: {
+          id: source,
+          label: formatLabel(source),
+          group: group_from
+        },
         position: savedPositions[source] || undefined
       });
       addedNodes.add(source);
@@ -26,7 +32,11 @@ Promise.all([
 
     if (target && !addedNodes.has(target)) {
       elements.push({
-        data: { id: target, group: group_to },
+        data: {
+          id: target,
+          label: formatLabel(target),
+          group: group_to
+        },
         position: savedPositions[target] || undefined
       });
       addedNodes.add(target);
@@ -80,19 +90,18 @@ function renderGraph(elements) {
       {
         selector: 'node',
         style: {
-          'label': 'data(id)',
+          'label': 'data(label)',
           'text-valign': 'center',
           'text-halign': 'center',
           'background-color': 'pink',
           'border-color': 'black',
           'border-width': 0.5,
-          'color': '#ffffff',
-          'font-size': 5,
+          'color': '#000000',
+          'font-size': 6,
           'font-weight': 'bold',
-          'text-outline-color': '#000000',
-          'text-outline-width': 1,
           'text-wrap': 'wrap',
-          'text-max-width': 80
+          'text-max-width': 80,
+          'white-space': 'pre' // Ensures \n shows properly
         }
       },
       {
@@ -111,10 +120,12 @@ function renderGraph(elements) {
         }
       },
       { selector: 'edge[type="slept_with"]', style: { 'line-color': '#3070b3' } },
+      { selector: 'edge[type="strava_rizz"]', style: { 'line-color': 'orange' } },
       { selector: 'edge[type="pulled"]', style: { 'line-color': '#46a64e' } },
       { selector: 'edge[type="dated"]', style: { 'line-color': '#ff2424' } },
       { selector: 'edge[type="hong_dong"]', style: { 'line-color': '#FF69B4' } },
       { selector: 'node[group="euoc"]', style: { 'background-color': 'white' } },
+      { selector: 'node[group="freshmex"]', style: { 'background-color': '#40e0d0' } },
       { selector: 'node[group="hh"]', style: { 'background-color': '#88e788' } },
       { selector: 'node[group="o"]', style: { 'background-color': '#FFEE8C' } }
     ]
@@ -125,10 +136,10 @@ function renderGraph(elements) {
   });
 }
 
-// Save layout to layout.json file
+// Save layout as JSON
 const saveBtn = document.getElementById('save-layout-btn');
 if (saveBtn) {
-  saveBtn.style.display = 'inline-block'; // Ensure it's visible if hidden by CSS
+  saveBtn.style.display = 'inline-block'; // Make button visible
 
   saveBtn.addEventListener('click', () => {
     if (!cy) {
@@ -150,7 +161,6 @@ if (saveBtn) {
     a.href = url;
     a.download = 'layout.json';
     a.click();
-
     URL.revokeObjectURL(url);
   });
 }
