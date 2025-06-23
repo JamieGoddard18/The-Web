@@ -131,6 +131,7 @@ function renderGraph(elements) {
     ]
   });
 
+  
   cy.once('layoutstop', () => {
     cy.fit(40);
   });
