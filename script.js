@@ -170,6 +170,7 @@ document.getElementById('search-button').addEventListener('click', () => {
   console.log("BIG BOY YOUR PHONE LINGING");
   const query = document.getElementById('search-input').value.trim();
   const node = cy.$(`node[label = '${query}']`);
+  console.log("Node : ",node)
   
   if (node.nonempty()) {
     cy.animate({
@@ -180,6 +181,6 @@ document.getElementById('search-button').addEventListener('click', () => {
       duration: 1000
     });
   } else {
-    alert('Name not found. Please double check spelling and whether or not they are a virgin!');
+    alert(query,' not found. Please double check spelling and whether or not they are a virgin!');
   }
 });
