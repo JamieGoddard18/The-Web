@@ -180,6 +180,6 @@ document.getElementById('search-button').addEventListener('click', () => {
       duration: 1000
     });
   } else {
-    alert('Node not found!');
+    alert('Name not found. Please double check spelling and whether or not they are a virgin!');
   }
 });
