@@ -165,3 +165,21 @@ if (saveBtn) {
     URL.revokeObjectURL(url);
   });
 }
+
+document.getElementById('search-button').addEventListener('click', () => {
+  console.log("BIG BOY YOUR PHONE LINGING");
+  const query = document.getElementById('search-input').value.trim();
+  const node = cy.$(`node[label = "${query}"]`);
+  
+  if (node.nonempty()) {
+    cy.animate({
+      fit: {
+        eles: node,
+        padding: 50
+      },
+      duration: 1000
+    });
+  } else {
+    alert('Node not found!');
+  }
+});

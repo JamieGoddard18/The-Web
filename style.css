@@ -135,3 +135,17 @@ button:hover {
 .button-container {
   display: none;
 }
+
+#search-container {
+  margin-top: 10px;
+}
+
+#search-input {
+  padding: 5px;
+  width: 200px;
+}
+
+#search-button {
+  padding: 5px 10px;
+  margin-left: 5px;
+}
