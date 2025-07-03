@@ -181,7 +181,7 @@ document.getElementById('search-button').addEventListener('click', () => {
   if (target) {
     console.log("in target");
     cy.animate({
-      pan: { x: target.x, y: target.y},
+      pan: { x: target.y, y: target.x},
       zoom: 2,
       duration: 1000
     });
