@@ -179,13 +179,10 @@ document.getElementById('search-button').addEventListener('click', () => {
   console.log("target : ",target);
 
   if (target) {
+    console.log("in target");
     cy.animate({
       pan:target,
       zoom: 2,
-      fit: {
-        eles: target,
-        padding: 50
-      },
       duration: 1000
     });
   } else {
