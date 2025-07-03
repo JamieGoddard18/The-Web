@@ -169,7 +169,7 @@ if (saveBtn) {
 document.getElementById('search-button').addEventListener('click', () => {
   console.log("BIG BOY YOUR PHONE LINGING");
   const query = document.getElementById('search-input').value.trim();
-  const node = cy.$(`node[label = "${query}"]`);
+  const node = cy.$(`node[label = '${query}']`);
   
   if (node.nonempty()) {
     cy.animate({
