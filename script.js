@@ -189,6 +189,6 @@ document.getElementById('search-button').addEventListener('click', () => {
       duration: 1000
     });
   } else {
-    alert("Name not found. Please double check spelling and whether or not they are a virgin!");
+    alert("Name not found. Please double check spelling e.g Sam Griffin . and whether or not they are a virgin!");
   }
 });
