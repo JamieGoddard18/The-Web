@@ -1,3 +1,5 @@
+import layoutData from './layout.json';
+
 let cy;
 
 // Load graph data and optional saved layout
