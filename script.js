@@ -1,5 +1,3 @@
-import layoutData from './layout.json';
-
 let cy;
 
 // Load graph data and optional saved layout
@@ -170,6 +168,11 @@ if (saveBtn) {
 
 document.getElementById('search-button').addEventListener('click', () => {
   console.log("BIG BOY YOUR PHONE LINGING");
+  const layoutData = {};
+    cy.nodes().forEach(node => {
+      const pos = node.position();
+      layoutData[node.id()] = { x: pos.x, y: pos.y };
+    });
   const query = document.getElementById('search-input').value.trim();
   console.log("qeury : ",query);
   const target = layoutData[query];
