@@ -180,6 +180,8 @@ document.getElementById('search-button').addEventListener('click', () => {
 
   if (target) {
     cy.animate({
+      pan:target,
+      zoom: 2,
       fit: {
         eles: target,
         padding: 50
