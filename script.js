@@ -169,10 +169,9 @@ if (saveBtn) {
 document.getElementById('search-button').addEventListener('click', () => {
   console.log("BIG BOY YOUR PHONE LINGING");
   const query = document.getElementById('search-input').value.trim();
-  //console.log("query : ",query)
-  //const node = cy.$(`node[label = '${query}']`);
- // console.log("Node : ",node)
+  console.log("qeury : ",query);
   const target = layoutData[query];
+  console.log("target : ",target);
 
   if (target) {
     cy.animate({
@@ -183,6 +182,6 @@ document.getElementById('search-button').addEventListener('click', () => {
       duration: 1000
     });
   } else {
-    alert(query+" not found. Please double check spelling and whether or not they are a virgin!");
+    alert("Name not found. Please double check spelling and whether or not they are a virgin!");
   }
 });
