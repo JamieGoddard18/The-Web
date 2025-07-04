@@ -190,13 +190,11 @@ if (saveBtn) {
 }
 
 document.getElementById("search-button").addEventListener("click", () => {
-  var name = document.getElementById("search-input").value;
-  var safeId = name.replace(/ /g, "\\ ");
-  var node = cy.$("#" + safeId);
+  var name = document.getElementById("search-input").value.trim();
+  var node = cy.nodes().filter(n => n.id().trim() === name);
   console.log("name", name);
   console.log("node", node);
 
-  console.log("this is what",String(name || "").trim());
   if (!node.empty()) {
     cy.animate(
       {
