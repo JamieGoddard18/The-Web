@@ -191,8 +191,8 @@ if (saveBtn) {
 
 document.getElementById("search-button").addEventListener("click", () => {
   var name = document.getElementById("search-input").value;
-  name = name.replace(/\s+/g, '');
-  var node = cy.$("#" + name);
+  var safeId = name.replace(/ /g, "\\ ");
+  var node = cy.$("#" + safeId);
   console.log("name", name);
   console.log("node", node);
   if (!node.empty()) {
