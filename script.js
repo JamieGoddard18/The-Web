@@ -167,26 +167,6 @@ if (saveBtn) {
 }
 
 document.getElementById('search-button').addEventListener('click', () => {
-  console.log("BIG BOY YOUR PHONE LINGING");
-  let target = null;
-  const query = document.getElementById('search-input').value.trim();
-  
-    cy.nodes().forEach(node => {
-      const label = node.data('label')
-      if(label === query){
-        target = node;
-      }
-    });
-
-  if (target) {
-    console.log("in target");
-    const pos = target.position();
-    cy.animate({
-      pan: { x: pos.x, y: pos.y},
-      zoom: 2,
-      duration: 1000
-    });
-  } else {
-    alert("Name not found. Please double check spelling e.g Sam Griffin .");
-  }
+    const name = document.getElementById("search-input");
+    console.log("name",name);
 });
