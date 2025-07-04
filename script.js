@@ -168,20 +168,31 @@ if (saveBtn) {
 
 document.getElementById('search-button').addEventListener('click', () => {
   console.log("BIG BOY YOUR PHONE LINGING");
-  const layoutData = {};
+  let target = null;
+  ///const layoutData = {};
     cy.nodes().forEach(node => {
-      const pos = node.position();
-      layoutData[node.id()] = { x: pos.x, y: pos.y };
+      const label = node.data('label')
+      if(label === query){
+        target = node
+      }
     });
   const query = document.getElementById('search-input').value.trim();
-  console.log("qeury : ",query);
-  const target = layoutData[query];
-  console.log("target : ",target);
+  // console.log("qeury :",query);
+  // const target = layoutData[query];
+  // console.log("target : ",target);
+
+    cy.nodes().forEach(node => {
+      const label = node.data('label')
+      if(label === query){
+        target = node;
+      }
+    });
 
   if (target) {
     console.log("in target");
+    const pos = target.position();
     cy.animate({
-      pan: { x: target.x, y: target.y},
+      pan: { x: pos.x, y: pos.y},
       zoom: 2,
       duration: 1000
     });
