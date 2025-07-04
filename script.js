@@ -169,12 +169,8 @@ if (saveBtn) {
 document.getElementById('search-button').addEventListener('click', () => {
   console.log("BIG BOY YOUR PHONE LINGING");
   let target = null;
-  ///const layoutData = {};
   const query = document.getElementById('search-input').value.trim();
-  // console.log("qeury :",query);
-  // const target = layoutData[query];
-  // console.log("target : ",target);
-
+  
     cy.nodes().forEach(node => {
       const label = node.data('label')
       if(label === query){
