@@ -181,11 +181,11 @@ document.getElementById('search-button').addEventListener('click', () => {
   if (target) {
     console.log("in target");
     cy.animate({
-      pan: { x: target.y, y: target.x},
+      pan: { x: target.x, y: target.y},
       zoom: 2,
       duration: 1000
     });
   } else {
-    alert("Name not found. Please double check spelling e.g Sam Griffin . and whether or not they are a virgin!");
+    alert("Name not found. Please double check spelling e.g Sam Griffin .");
   }
 });
