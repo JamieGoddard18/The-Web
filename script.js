@@ -11,6 +11,7 @@ Promise.all([
 
   data.forEach((row) => {
     const source = String(row.from || "").trim();
+    console.log("source",source);
     const target = String(row.to || "").trim();
     const type = String(row["type "] || row.type || "").trim();
     const group_from = String(row.group_from || "").trim();
