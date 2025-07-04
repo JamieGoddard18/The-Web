@@ -189,8 +189,8 @@ if (saveBtn) {
 }
 
 document.getElementById("search-button").addEventListener("click", () => {
-  const name = document.getElementById("search-input").value;
-
+  var name = document.getElementById("search-input").value;
+  name = name.replace(/\s+/g, '');
   var node = cy.$("#" + name);
   console.log("name", name);
   console.log("node", node);
