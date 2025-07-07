@@ -1534,13 +1534,6 @@
   },
   {
     "from":"Ross Brown",
-    "to":"Jamie Goddard",
-    "type":"slept_with",
-    "group_from":"rugby",
-    "group_to":"euoc"
-  },
-  {
-    "from":"Ross Brown",
     "to":"Issy Sunley",
     "type":"slept_with",
     "group_from":"rugby",
@@ -1552,5 +1545,12 @@
     "type":"slept_with",
     "group_from":"rugby",
     "group_to":"stuoc"
+  },
+  {
+    "from":"Ross Brown",
+    "to":"Jamie Goddard",
+    "type":"slept_with",
+    "group_from":"rugby",
+    "group_to":"euoc"
   }
 ]
