@@ -28,6 +28,20 @@
     "group_to":"euoc"
   },
   {
+    "from":"Ross Brown",
+    "to":"Jamie Goddard",
+    "type":"slept_with",
+    "group_from":"rugby",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Jamie Goddard",
+    "to":"Ross Brown",
+    "type":"slept_with",
+    "group_from":"euoc",
+    "group_to":"rugby"
+  },
+  {
     "from":"Lizzie Stansfield ",
     "to":"Boyan Ivandjikov",
     "type":"pulled",
