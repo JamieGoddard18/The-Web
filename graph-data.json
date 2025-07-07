@@ -1531,5 +1531,26 @@
     "type":"slept_with",
     "group_from":"hh",
     "group_to":"hh"
+  },
+  {
+    "from":"Ross Brown",
+    "to":"Jamie Goddard",
+    "type":"slept_with",
+    "group_from":"rugby",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Ross Brown",
+    "to":"Issy Sunley",
+    "type":"slept_with",
+    "group_from":"rugby",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Ross Brown",
+    "to":"Holly Stodgell",
+    "type":"slept_with",
+    "group_from":"rugby",
+    "group_to":"stuoc"
   }
 ]
