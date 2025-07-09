@@ -197,9 +197,9 @@ sup.trademark {
   }
 
   #legend {
-    bottom: 12px;
-    left: 12px;
-    top: auto;
-    right: auto;
+    top: auto !important;
+    right: auto !important;
+    bottom: 12px !important;
+    left: 12px !important;
   }
 }
