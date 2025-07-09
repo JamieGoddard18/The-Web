@@ -201,5 +201,6 @@ sup.trademark {
     right: auto !important;
     bottom: 12px !important;
     left: 12px !important;
+    align-items: bottom !important;
   }
 }
