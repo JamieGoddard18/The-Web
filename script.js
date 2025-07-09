@@ -134,7 +134,7 @@ function renderGraph(elements) {
         style: { "line-color": "orange" },
       },
       { selector: 'edge[type="pulled"]', style: { "line-color": "#46a64e" } },
-      { selector: 'edge[type="dated"]', style: { "line-color": "#ff2424" } },
+      { selector: 'edge[type="dated\/dating"]', style: { "line-color": "#ff2424" } },
       {
         selector: 'edge[type="hong_dong"]',
         style: { "line-color": "#FF69B4" },
