@@ -12,18 +12,16 @@ body {
 
 #title-box {
   position: absolute;
-  top: 60px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 12px;
+  left: 12px;
   background-color: #2e7d32;
   padding: 10px 20px;
   border-radius: 8px;
-  z-index: 15; 
+  z-index: 15;
   color: white;
-  border-color: black;
-  border-width: 1.5px;
-  border-style: solid;
+  max-width: 250px;
 }
+
 
 h1 {
   margin-top: 3px;
@@ -148,8 +146,7 @@ button:hover {
 #search-container {
   position: absolute;
   top: 12px;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 12px;
   z-index: 15;
   background: rgba(255, 255, 255, 0.9);
   padding: 6px;
@@ -157,8 +154,7 @@ button:hover {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
   display: flex;
   gap: 6px;
-  flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
 }
 
 #search-input {
@@ -170,7 +166,6 @@ button:hover {
 #search-button {
   padding: 6px 10px;
   font-size: 14px;
-  margin-left: 5px;
   background-color: #2e7d32;
   color: white;
   border: none;
@@ -184,14 +179,15 @@ button:hover {
 
 #footer-text {
   position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 12px;
+  right: 12px;
   font-size: 0.9rem;
   color: #333;
   z-index: 15;
-  background: rgba(255,255,255,0.8); 
+  background: rgba(255, 255, 255, 0.8);
   padding: 4px 10px;
   border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: right;
 }
