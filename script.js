@@ -208,6 +208,6 @@ document.getElementById("search-button").addEventListener("click", () => {
       }
     );
   } else {
-    alert("failure");
+    alert("We could not find :",name+". Ensure proper Spelling, e.g Barney Stevenson-Barnes");
   }
 });
