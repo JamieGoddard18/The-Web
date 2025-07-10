@@ -111,9 +111,18 @@ sup.trademark {
   user-select: none;
   max-width: 180px;
   z-index: 10;
-  list-style: none;
-  float: left; margin-right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adds spacing between items */
+
+
 }
+
+#legend div {
+    display: flex;
+    align-items: center;
+}
+
 
 #legend h3 {
   margin: 0 0 8px 0;
