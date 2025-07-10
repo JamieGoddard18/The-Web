@@ -174,11 +174,6 @@ sup.trademark {
   #title-box,
   #search-container,
   #footer-text,
-  #legend {
-    position: absolute;
-    bottom: 10px;
-    margin: 10px auto;
-  }
 
   #title-box {
     text-align: center;
@@ -209,8 +204,6 @@ sup.trademark {
   }
 
   #legend {
-    top: auto !important;
-    right: auto !important;
     bottom: 12px !important;
     left: 12px !important;
     align-items: bottom !important;
