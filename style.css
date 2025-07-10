@@ -111,6 +111,8 @@ sup.trademark {
   user-select: none;
   max-width: 180px;
   z-index: 10;
+  list-style: none;
+  float: left; margin-right: 10px;
 }
 
 #legend h3 {
