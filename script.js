@@ -208,6 +208,7 @@ document.getElementById("search-button").addEventListener("click", () => {
       }
     );
   } else {
-    alert("We could not find :",name+". Ensure proper Spelling, e.g Barney Stevenson-Barnes");
+    let failString = "We could not find : "+name+". Ensure proper Spelling, e.g Barney Stevenson-Barnes";
+    alert(failString);
   }
 });
