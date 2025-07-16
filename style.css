@@ -193,7 +193,7 @@ sup.trademark {
     position: relative;
     align-self: center;
     box-align: center;
-    top: 200px;
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
