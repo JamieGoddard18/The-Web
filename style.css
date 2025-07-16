@@ -176,6 +176,7 @@ sup.trademark {
   #footer-text,
 
   #title-box {
+    align-self: center;
     text-align: center;
     background-color: #2e7d32;
     border-radius: 0;
@@ -187,6 +188,7 @@ sup.trademark {
   }
 
   #search-container {
+    align-self: center;
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
