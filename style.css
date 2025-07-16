@@ -28,8 +28,8 @@ body {
 /* Title Box */
 #title-box {
   position: absolute;
+  box-align: center;
   top: 12px;
-  left: 12px;
   background-color: #2e7d32;
   padding: 10px 20px;
   border-radius: 8px;
