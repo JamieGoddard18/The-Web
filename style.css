@@ -30,6 +30,8 @@ body {
   position: absolute;
   box-align: center;
   top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #2e7d32;
   padding: 10px 20px;
   border-radius: 8px;
@@ -188,7 +190,7 @@ sup.trademark {
   }
 
   #search-container {
-    position: center;
+    position: absolute;
     align-self: center;
     width: 100%;
     justify-content: center;
