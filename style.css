@@ -188,6 +188,7 @@ sup.trademark {
   }
 
   #search-container {
+    position: center;
     align-self: center;
     width: 100%;
     justify-content: center;
