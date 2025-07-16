@@ -190,7 +190,7 @@ sup.trademark {
   }
 
   #search-container {
-    position: absolute;
+    position: relative;
     align-self: center;
     box-align: center;
     top: 200px;
