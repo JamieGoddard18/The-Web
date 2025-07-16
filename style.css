@@ -99,8 +99,8 @@ sup.trademark {
 /* Legend */
 #legend {
   position: absolute;
-  bottom: 12px;
-  left: 12px;
+  bottom: 12px !important;
+  left: 12px !important;
   background: rgba(30, 30, 30, 0.85);
   padding: 10px 14px;
   border-radius: 8px;
@@ -118,18 +118,18 @@ sup.trademark {
 
 }
 
-#legend div {
+/* #legend div {
     display: flex;
     align-items: center;
-}
+} */
 
 
-#legend h3 {
+/* #legend h3 {
   margin: 0 0 8px 0;
   font-weight: 700;
   font-size: 16px;
   text-align: center;
-}
+} */
 
 .legend-color {
   display: inline-block;
@@ -203,9 +203,9 @@ sup.trademark {
     display: none;
   }
 
-  #legend {
+  /* #legend {
     bottom: 12px !important;
     left: 12px !important;
     align-items: bottom !important;
-  }
+  } */
 }
