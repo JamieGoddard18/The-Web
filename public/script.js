@@ -1,5 +1,8 @@
 let cy;
 
+let swOn = true;
+
+
 // Load graph data and optional saved layout
 Promise.all([
   fetch("graph-data.json").then((res) => res.json()),
@@ -214,16 +217,22 @@ document.getElementById("search-button").addEventListener("click", () => {
 });
 
 
+/// hide/show code for connection types
+const edgeTypeVisibility = {}; // Track visibility per type
 
-document.getElementById("legend-color slept_with").addEventListener("click", () => {
-  console.log("sw here");
+document.querySelectorAll(".legend-item").forEach((item) => {
+  const type = item.getAttribute("data-type");
+  edgeTypeVisibility[type] = true; // default: visible
 
-});
+  item.addEventListener("click", () => {
+    edgeTypeVisibility[type] = !edgeTypeVisibility[type];
 
-document.getElementById("legend-color").addEventListener("click", () => {
-  console.log("all legend color here");
-
-
-
-
+    cy.edges().forEach((edge) => {
+      if (edge.data("type") === type) {
+        edge.style("opacity", edgeTypeVisibility[type] ? 1 : 0);
+      }
+    });
+    //make legend greyed out to show 
+    item.style.opacity = edgeTypeVisibility[type] ? "1" : "0.4";
+  });
 });
