@@ -166,7 +166,7 @@ sup.trademark {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 100%) {
   body {
     flex-direction: column;
     justify-content: flex-start;
