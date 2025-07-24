@@ -222,3 +222,11 @@ document.getElementById("legend-color slept_with").addEventListener("click", () 
 
 
 });
+
+document.getElementById("legend-color").addEventListener("click", () => {
+  console.log("all legend color here");
+
+
+
+
+});
