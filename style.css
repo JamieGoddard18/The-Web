@@ -178,7 +178,7 @@ sup.trademark {
   #footer-text,
 
   #title-box {
-    align-self: center;
+    left: 50%;
     text-align: center;
     background-color: #2e7d32;
     border-radius: 0;
