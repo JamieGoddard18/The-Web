@@ -5,8 +5,13 @@ The Start up ideas:
 
 ### The Web
 ## Search bar
-# get to work for double names
+# ~~get to work for double names~~
 # find near matches and display in failure alert
+
+## Legend
+# allow ability to click on legend to only show those connections
+# allow to work for different combos (have all set to on as default, click to turn off)
+# can use cy.remove() to remove by cy.filter(). remove returns all removed values and can be restored using cy.restore() 
 
 Goals:
 

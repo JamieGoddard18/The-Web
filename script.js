@@ -212,3 +212,13 @@ document.getElementById("search-button").addEventListener("click", () => {
     alert(failString);
   }
 });
+
+
+
+document.getElementById("legend-color slept_with").addEventListener("click", () => {
+  console.log("sw here");
+
+
+
+
+});
