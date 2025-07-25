@@ -166,7 +166,7 @@ sup.trademark {
 }
 
 
-@media (max-width: 100%) {
+@media(max-width: 400px) {
   body {
     flex-direction: column;
     justify-content: flex-start;
@@ -193,7 +193,7 @@ sup.trademark {
     position: relative;
     align-self: center;
     box-align: center;
-    top: 100px;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
