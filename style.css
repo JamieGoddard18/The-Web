@@ -31,7 +31,7 @@ body {
   box-align: center;
   top: 12px;
   left: 50%;
-
+  transform: translateX(-50%);
   background-color: #2e7d32;
   padding: 10px 20px;
   border-radius: 8px;
@@ -115,24 +115,10 @@ sup.trademark {
   z-index: 10;
   display: flex;
   align-items: center;
-  gap: 10px; /* Adds spacing between items */
-
-
+  gap: 10px;
 }
 
-/* #legend div {
-    display: flex;
-    align-items: center;
-} */
-
-
-/* #legend h3 {
-  margin: 0 0 8px 0;
-  font-weight: 700;
-  font-size: 16px;
-  text-align: center;
-} */
-
+/* Legend Color Items */
 .legend-color {
   display: inline-block;
   width: 18px;
@@ -165,7 +151,30 @@ sup.trademark {
   z-index: 15;
 }
 
+/* Button Container for Save Layout (Desktop) */
+.button-container {
+  display: none; /* Ensure it's visible by default for desktop */
+  text-align: center;
+  margin-top: 20px;
+  z-index: 100; /* Ensure it's on top of other elements */
+}
 
+#save-layout-btn {
+  display: none;
+  padding: 10px 20px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+#save-layout-btn:hover {
+  background-color: #388e3c;
+}
+
+/* Media Query for smaller screens (Mobile View) */
 @media(max-width: 400px) {
   body {
     flex-direction: column;
@@ -175,9 +184,7 @@ sup.trademark {
 
   #title-box,
   #search-container,
-  #footer-text,
-
-  #title-box {
+  #footer-text {
     left: 50%;
     text-align: center;
     background-color: #2e7d32;
@@ -208,13 +215,7 @@ sup.trademark {
     max-width: 240px;
   }
 
-   #footer-text {
+  #footer-text {
     display: none;
   }
-
-  /* #legend {
-    bottom: 12px !important;
-    left: 12px !important;
-    align-items: bottom !important;
-  } */
 }

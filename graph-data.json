@@ -532,18 +532,18 @@
     "group_to":"o"
   },
   {
-    "from":"Sam Griffin ",
-    "to":"Valerie Ebony",
-    "type":"slept_with",
-    "group_from":"euoc",
-    "group_to":"freshmex"
+    "from":"Dan O'Riordan",
+    "to":"Maja Thomson",
+    "type":"pulled",
+    "group_from":"hh",
+    "group_to":"hh"
   },
   {
-    "from":"Sam Griffin ",
-    "to":"Natalia Drozd",
+    "from":"Euan Patton",
+    "to":"Maja Thomson",
     "type":"slept_with",
-    "group_from":"euoc",
-    "group_to":"freshmex"
+    "group_from":"hh",
+    "group_to":"hh"
   },
   {
     "from":"Issy Sunley",
@@ -637,11 +637,11 @@
     "group_to":"euoc"
   },
   {
-    "from":"Joe Wright",
-    "to":"Eilidh Campbell",
-    "type":"pulled",
-    "group_from":"euoc",
-    "group_to":"euoc"
+    "from":"Dan O'Riordan",
+    "to":"Heidi Robertshaw",
+    "type":"slept_with",
+    "group_from":"hh",
+    "group_to":"hh"
   },
   {
     "from":"Joe Wright",
@@ -1030,7 +1030,7 @@
   },
   {
     "from":"Daisy McNamara",
-    "to":"C.I.T.P.A",
+    "to":"Andrew Bunting ",
     "type":"dated\/dating",
     "group_from":"euoc",
     "group_to":"o"
@@ -1100,13 +1100,13 @@
   },
   {
     "from":"Finlay Ross-Davie ",
-    "to":"Charity Tweeks",
+    "to":"Charity Weeks",
     "type":"pulled",
     "group_from":"hh",
     "group_to":"hh"
   },
   {
-    "from":"Charity Tweeks",
+    "from":"Charity Weeks",
     "to":"Sam Griffin ",
     "type":"pulled",
     "group_from":"hh",
@@ -1240,7 +1240,7 @@
   },
   {
     "from":"Toby Cazzolato",
-    "to":"Maya Miler",
+    "to":"Maya Miller",
     "type":"pulled",
     "group_from":"o",
     "group_to":"hh"
@@ -1491,11 +1491,11 @@
     "group_to":"o"
   },
   {
-    "from":"Finlay Raynor",
-    "to":"Freya Shepherd",
-    "type":"dated\/dating",
-    "group_from":"o",
-    "group_to":"euoc"
+    "from":"Dan O'Riordan",
+    "to":"Isla Calvert ",
+    "type":"slept_with",
+    "group_from":"hh",
+    "group_to":"hh"
   },
   {
     "from":"Eve Young",
@@ -1505,30 +1505,23 @@
     "group_to":"hh"
   },
   {
-    "from":"Dan O'Riordan",
-    "to":"Isla Calvert ",
+    "from":"Angus Smith",
+    "to":"Maya Miller",
     "type":"pulled",
     "group_from":"hh",
     "group_to":"hh"
   },
   {
-    "from":"Dan O'Riordan",
-    "to":"Heidi Robertshaw",
-    "type":"slept_with",
-    "group_from":"hh",
-    "group_to":"hh"
-  },
-  {
-    "from":"Dan O'Riordan",
-    "to":"Maja Thomson",
+    "from":"Caitlyn Heggie",
+    "to":"Ewan Foubester ",
     "type":"pulled",
     "group_from":"hh",
     "group_to":"hh"
   },
   {
-    "from":"Euan Patton",
-    "to":"Maja Thomson",
-    "type":"slept_with",
+    "from":"Angus Wright ",
+    "to":"Caitlyn Heggie",
+    "type":"pulled",
     "group_from":"hh",
     "group_to":"hh"
   }
