@@ -75,7 +75,7 @@ function renderGraph(elements) {
   cy = cytoscape({
     container: document.getElementById("cy"),
     elements,
-    minZoom: 1,
+    minZoom: -5,
     maxZoom: 5,
     wheelSensitivity: 0.2,
 
