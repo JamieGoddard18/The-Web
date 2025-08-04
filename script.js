@@ -194,9 +194,9 @@ if (saveBtn) {
 
 document.getElementById("search-button").addEventListener("click", () => {
   var name = document.getElementById("search-input").value.trim();
-  var node = cy.nodes().filter(n => n.id().trim() === name);
-  console.log("name", name);
-  console.log("node", node);
+  var node = cy.nodes().filter(n => n.id().trim().toLowerCase() == name.toLowerCase());
+  console.log("name", name.toLowerCase());
+  console.log("node", node.id().trim().toLowerCase());
 
   if (!node.empty()) {
     cy.animate(
