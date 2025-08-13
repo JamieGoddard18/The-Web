@@ -158,6 +158,8 @@ function renderGraph(elements) {
     ],
   });
 
+  cy.nodes().ungrabify(); 
+
   cy.once("layoutstop", () => {
     cy.fit(40);
   });
