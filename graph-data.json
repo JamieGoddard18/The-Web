@@ -1079,7 +1079,7 @@
   },
   {
     "from":"Saskia Chaplin",
-    "to":"Fredie Fearn",
+    "to":"Freddie Fearn",
     "type":"dated\/dating",
     "group_from":"hh",
     "group_to":"hh"
@@ -1524,5 +1524,40 @@
     "type":"pulled",
     "group_from":"hh",
     "group_to":"hh"
+  },
+  {
+    "from":"Alex Wetherill",
+    "to":"Holly Stodgell",
+    "type":"pulled",
+    "group_from":"euoc",
+    "group_to":"o"
+  },
+  {
+    "from":"Ellie Bales",
+    "to":"Charlie Rennie",
+    "type":"dated\/dating",
+    "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Dom Green",
+    "to":"Ellinor Ellis",
+    "type":"dated\/dating",
+    "group_from":"o",
+    "group_to":"o"
+  },
+  {
+    "from":"Frank Townley",
+    "to":"Ellinor Ellis",
+    "type":"pulled",
+    "group_from":"euoc",
+    "group_to":"o"
+  },
+  {
+    "from":"Dom Green",
+    "to":"Chloe Potter",
+    "type":"pulled",
+    "group_from":"o",
+    "group_to":"o"
   }
 ]
