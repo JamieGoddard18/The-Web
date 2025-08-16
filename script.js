@@ -75,9 +75,8 @@ function renderGraph(elements) {
   cy = cytoscape({
     container: document.getElementById("cy"),
     elements,
-    minZoom: -2,
+    minZoom: 0.5,
     maxZoom: 5,
-    wheelSensitivity: 0.2,
 
     layout: hasPositions
       ? { name: "preset" }
@@ -110,13 +109,14 @@ function renderGraph(elements) {
           "font-weight": "bold",
           "text-wrap": "wrap",
           "text-max-width": 80,
-          "white-space": "pre", // Ensures \n shows properly
+          "overlay-opacity": 0 
         },
       },
       {
         selector: "edge",
         style: {
           width: 1.5,
+          "overlay-opacity": 0, 
           "curve-style": "bezier",
           "line-color": "#a974ff",
           "target-arrow-shape": "none",
@@ -127,6 +127,12 @@ function renderGraph(elements) {
           "text-background-padding": 3,
           "text-background-shape": "roundrectangle",
         },
+      },
+      {
+        selector: "core",
+        style: {
+          "active-bg-opacity": 0 
+          }
       },
       {
         selector: 'edge[type="slept_with"]',
@@ -158,7 +164,7 @@ function renderGraph(elements) {
     ],
   });
 
-  cy.nodes().ungrabify(); 
+  cy.nodes().ungrabify().unselectify();
 
   cy.once("layoutstop", () => {
     cy.fit(40);
