@@ -66,7 +66,7 @@ sup.trademark {
   top: 12px;
   right: 12px;
   z-index: 15;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(30, 30, 30, 0.85);
   padding: 6px;
   border-radius: 6px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
@@ -79,6 +79,7 @@ sup.trademark {
   padding: 6px;
   width: 180px;
   font-size: 14px;
+  background-color: #f1f1f1;
 }
 
 #search-button {
@@ -89,6 +90,9 @@ sup.trademark {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
 }
 
 #search-button:hover {
