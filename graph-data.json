@@ -1513,7 +1513,7 @@
   },
   {
     "from":"Caitlyn Heggie",
-    "to":"Ewan Foubester ",
+    "to":"Ewan Foubister ",
     "type":"pulled",
     "group_from":"hh",
     "group_to":"hh"
@@ -1521,7 +1521,7 @@
   {
     "from":"Angus Wright ",
     "to":"Caitlyn Heggie",
-    "type":"pulled",
+    "type":"dated\/dating",
     "group_from":"hh",
     "group_to":"hh"
   },
@@ -1559,5 +1559,117 @@
     "type":"pulled",
     "group_from":"o",
     "group_to":"o"
+  },
+  {
+    "from":"Ewan Foubister",
+    "to":"Heidi Robertshaw",
+    "type":"slept_with",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Sam Leitch",
+    "to":"Niamh Hunter",
+    "type":"pulled",
+    "group_from":"o",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Harris Pagett",
+    "to":"Heidi Robertshaw",
+    "type":"slept_with",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Sam Leitch",
+    "to":"Niamh Carr",
+    "type":"pulled",
+    "group_from":"o",
+    "group_to":"hh"
+  },
+  {
+    "from":"Isla Calvert ",
+    "to":"Thomas Hilton",
+    "type":"slept_with",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Angus Smith",
+    "to":"Allegra Souter",
+    "type":"dated\/dating",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Oliver Morrison",
+    "to":"Caitlin Hall",
+    "type":"pulled",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Oliver Morrison",
+    "to":"Phoebe Gill",
+    "type":"snap",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Alex Wetherill",
+    "to":"Izzy Howard",
+    "type":"dated\/dating",
+    "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Rimicans",
+    "to":"Daisy McNamara ",
+    "type":"pulled",
+    "group_from":"hh",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Andrew Thomson",
+    "to":"Megan Keith",
+    "type":"dated\/dating",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Katie the Rager",
+    "to":"Alistair Marshall",
+    "type":"pulled",
+    "group_from":"hh",
+    "group_to":"o"
+  },
+  {
+    "from":"Alex Matthew",
+    "to":"Caitlyn Heggie",
+    "type":"pulled",
+    "group_from":"euoc",
+    "group_to":"hh"
+  },
+  {
+    "from":"Thomas Hilton",
+    "to":"Caitlin Hall",
+    "type":"pulled",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Daisy McNamara",
+    "to":"Ewan Bennet ",
+    "type":"pulled",
+    "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Euan Tryner",
+    "to":"Emma Crawford",
+    "type":"dated\/dating",
+    "group_from":"euoc",
+    "group_to":"euoc"
   }
 ]
