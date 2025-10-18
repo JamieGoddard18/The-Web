@@ -139,6 +139,10 @@ function renderGraph(elements) {
         style: { "line-color": "#3070b3" },
       },
       {
+        selector: 'edge[type="snap"]',
+        style: { "line-color": "#FFFF00" },
+      },
+      {
         selector: 'edge[type="strava_rizz"]',
         style: { "line-color": "orange" },
       },
@@ -151,10 +155,6 @@ function renderGraph(elements) {
       {
         selector: 'node[group="euoc"]',
         style: { "background-color": "white" },
-      },
-      {
-        selector: 'node[group="freshmex"]',
-        style: { "background-color": "#40e0d0" },
       },
       {
         selector: 'node[group="hh"]',
