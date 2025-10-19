@@ -244,3 +244,15 @@ document.querySelectorAll(".legend-item").forEach((item) => {
     item.style.opacity = edgeTypeVisibility[type] ? "1" : "0.4";
   });
 });
+
+function darkMode() { 
+  if (!(document.getElementById('cy').style.backgroundColor == "black")) {
+    document.getElementById('cy').style.backgroundColor = "black"; 
+    document.getElementById('cy').style.backgroundImage = "linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px)";
+  }
+  else {
+    document.getElementById('cy').style.backgroundColor = "white"; 
+    document.getElementById('cy').style.backgroundImage = "linear-gradient(to right, rgba(0, 0, 0, 0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 1px, transparent 1px)";
+  }
+  
+}
