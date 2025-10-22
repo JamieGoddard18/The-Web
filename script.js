@@ -256,3 +256,10 @@ function darkMode() {
   }
   
 }
+
+// Function to send anonymous submission 
+function sendSubmission() {
+  let text = document.getElementById('submission')
+  let submission = text.value;
+  alert(submission);
+}
