@@ -207,7 +207,7 @@ sup.trademark {
 @media(max-width: 430px) {
 
   #title-box {
-    max-width: 100px;
+    max-width: 135px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 2px;
@@ -216,7 +216,7 @@ sup.trademark {
   }
 
   h1 {
-    font-size: 14px;
+    font-size: 18px;
     margin: 0;
   }
 
@@ -243,7 +243,15 @@ sup.trademark {
   .toggle-msg{ 
   font-size: 8px;
   color: #adadad;
+  }
+  
+  .submit-btn-container {
+  top: 60px !important;
 }
 
+  #submit-btn{
+    width: 120px;
+    font-size: 5pt;
+  }
 
 }
