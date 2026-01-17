@@ -1556,7 +1556,7 @@
   {
     "from":"Dom Green",
     "to":"Chloe Potter",
-    "type":"pulled",
+    "type":"slept_with",
     "group_from":"o",
     "group_to":"o"
   },
@@ -1653,7 +1653,7 @@
   },
   {
     "from":"Thomas Hilton",
-    "to":"Caitlin Hall",
+    "to":"Issy Sunley",
     "type":"pulled",
     "group_from":"hh",
     "group_to":"hh"
@@ -1671,5 +1671,82 @@
     "type":"dated\/dating",
     "group_from":"euoc",
     "group_to":"euoc"
+  },
+  {
+    "from":"Liam Edwards",
+    "to":"Kolbrun",
+    "type":"pulled",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Imogen Marshall",
+    "to":"Nick Smith",
+    "type":"pulled",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Issy Sunley",
+    "to":"Harris Pagett",
+    "type":"pulled",
+    "group_from":"euoc",
+    "group_to":"hh"
+  },
+  {
+    "from":"Liam Edwards",
+    "to":"Charlotte Burton",
+    "type":"dated\/dating",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Harris Pagett",
+    "to":"Caitlin Hall",
+    "type":"pulled",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Harris Pagett",
+    "to":"Pati",
+    "type":"pulled",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Ewan Foubister",
+    "to":"Pati",
+    "type":"slept_with",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Ewan Foubister",
+    "to":"Mhairi Ballantyne",
+    "type":"pulled",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Thomas Hilton",
+    "to":"Kolbrun",
+    "type":"dated\/dating",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Laurence Ward",
+    "to":"Charlotte Burton",
+    "type":"slept_with",
+    "group_from":"euoc",
+    "group_to":"hh"
+  },
+  {
+    "from":"Bish",
+    "to":"Karoline",
+    "type":"pulled",
+    "group_from":"euoc",
+    "group_to":"hh"
   }
 ]
