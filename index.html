@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The Web</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="./euocweb.png?v=2">
+
+
 
   <!-- Cytoscape.js -->
   <script src="https://unpkg.com/cytoscape@3.26.0/dist/cytoscape.min.js"></script>
@@ -19,24 +22,51 @@
   </script>
 </head>
 <body>
-  <h1>
-  The Web<sup class="trademark">®</sup>
-  <div class="subtitle">by The Start Up<sup class="trademark">™</sup></div>
-</h1>
-  <div id="cy-container">
-    <div id="cy"></div>
-    <div id="legend">
-      <div><span class="legend-color slept_with"></span> Slept With</div>
-      <div><span class="legend-color pulled"></span> Pulled</div>
-      <div><span class="legend-color dated"></span> Dated</div>
-      <div><span class="legend-color hong_dong"></span> Hong Dong</div>
-    </div>
+  <div id="cy"></div>
+
+  <!-- Title -->
+  <div id="title-box">
+    <h1>
+      The Web<sup class="trademark">®</sup>
+      <span class="subtitle">by The Start Up<sup class="trademark">™</sup></span>
+    </h1>
   </div>
 
-  Welcome to The Web®, enjoy and proceed with caution!<br>
-  <div class="button-container">
+ 
+  <!-- Search -->
+  <div id="search-container">
+    <input type="text" id="search-input" placeholder="Search node by name..." />
+    <button id="search-button">Search</button>
+  </div>
+
+  <!-- Legend -->
+  <div id="legend">
+    <div class="legend-item" data-type="slept_with"><span class="legend-color slept_with"></span> Slept With</div>
+    <div class="legend-item" data-type="pulled"><span class="legend-color pulled"></span> Pulled</div>
+    <div class="legend-item" data-type="dated/dating"><span class="legend-color dated"></span> Dated/Dating</div>
+    <div class="legend-item" data-type="hong_dong"><span class="legend-color hong_dong"></span> Hong Dong</div>
+    <div class="legend-item" data-type="strava_rizz"><span class="legend-color strava_rizz"></span> Strava Rizz</div>
+    <div class="legend-item" data-type="snap"><span class="legend-color snap"></span> Snap Acquired</div>
+
+    <div class="toggle-msg">Click for toggle</div>
+  </div>
+
+  <!-- Hidden save button -->
+  <div class="save-layout-btn-container">
     <button id="save-layout-btn">Save Layout</button>
   </div>
+
+
+  <div class="dark-mode-btn-container">
+    <button onclick="darkMode()" id="dark-mode-btn">Dark Mode</button>
+  </div>
+
+  <div class="submit-btn-container">
+    <a href="submit.html" id="submit-btn">Click here to submit anonymously</a>
+    <!--<button href="submit.html" id="submit-btn">Summit Anonymously</button>
+    <a href="submit.html">link</a>-->
+  </div>
+
 
   <script src="script.js"></script>
 </body>
