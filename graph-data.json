@@ -1512,14 +1512,56 @@
     "group_to":"hh"
   },
   {
-    "from":"Dom Green",
-    "to":"Holly Stodgell",
+    "from":"Caitlyn Heggie",
+    "to":"Ewan Foubister ",
     "type":"pulled",
-    "group_from":"o",
-    "group_to":"stuoc"
+    "group_from":"hh",
+    "group_to":"hh"
   },
   {
-    "from":"Dan O'Riordan",
+    "from":"Angus Wright ",
+    "to":"Caitlyn Heggie",
+    "type":"dated\/dating",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Alex Wetherill",
+    "to":"Holly Stodgell",
+    "type":"pulled",
+    "group_from":"euoc",
+    "group_to":"o"
+  },
+  {
+    "from":"Ellie Bales",
+    "to":"Charlie Rennie",
+    "type":"dated\/dating",
+    "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Dom Green",
+    "to":"Ellinor Ellis",
+    "type":"dated\/dating",
+    "group_from":"o",
+    "group_to":"o"
+  },
+  {
+    "from":"Frank Townley",
+    "to":"Ellinor Ellis",
+    "type":"pulled",
+    "group_from":"euoc",
+    "group_to":"o"
+  },
+  {
+    "from":"Dom Green",
+    "to":"Chloe Potter",
+    "type":"slept_with",
+    "group_from":"o",
+    "group_to":"o"
+  },
+  {
+    "from":"Ewan Foubister",
     "to":"Heidi Robertshaw",
     "type":"slept_with",
     "group_from":"hh",
@@ -1720,5 +1762,33 @@
     "type":"dated\/dating",
     "group_from":"euoc",
     "group_to":"euoc"
+  },
+  {
+    "from":"Dom Green",
+    "to":"Holly Stodgell",
+    "type":"slept_with",
+    "group_from":"o",
+    "group_to":"o"
+  },
+  {
+    "from":"Alex Matthew",
+    "to":"Chloe Cracknell",
+    "type":"slept_with",
+    "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Isaac Hunter ",
+    "to":"Issy Sunley",
+    "type":"slept_with",
+    "group_from":"o",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Bezza Pezza",
+    "to":"Pati",
+    "type":"pulled",
+    "group_from":"o",
+    "group_to":"hh"
   }
 ]
