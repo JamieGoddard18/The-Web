@@ -590,7 +590,7 @@
   {
     "from":"Issy Sunley",
     "to":"Alex Matthew",
-    "type":"dated\/dating",
+    "type":"slept_with",
     "group_from":"euoc",
     "group_to":"euoc"
   },
@@ -1736,10 +1736,10 @@
     "group_to":"hh"
   },
   {
-    "from":"Laurence Ward",
-    "to":"Charlotte Burton",
-    "type":"slept_with",
-    "group_from":"euoc",
+    "from":"Bezza Pezza",
+    "to":"Pati",
+    "type":"pulled",
+    "group_from":"o",
     "group_to":"hh"
   },
   {
@@ -1761,6 +1761,27 @@
     "to":"Daisy Rennie",
     "type":"dated\/dating",
     "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Dom Green",
+    "to":"Holly Stodgell",
+    "type":"slept_with",
+    "group_from":"o",
+    "group_to":"o"
+  },
+  {
+    "from":"Alex Matthew",
+    "to":"Chloe Cracknell",
+    "type":"slept_with",
+    "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Isaac Hunter ",
+    "to":"Issy Sunley",
+    "type":"slept_with",
+    "group_from":"o",
     "group_to":"euoc"
   }
 ]
