@@ -574,11 +574,11 @@
     "group_to":"o"
   },
   {
-    "from":"Issy Sunley",
-    "to":"Liam Edwards",
-    "type":"pulled",
-    "group_from":"euoc",
-    "group_to":"hh"
+    "from":"Isla Calvert ",
+    "to":"Alex Wetherill",
+    "type":"dated\/dating",
+    "group_from":"hh",
+    "group_to":"euoc"
   },
   {
     "from":"Issy Sunley",
@@ -1246,20 +1246,6 @@
     "group_to":"hh"
   },
   {
-    "from":"Ellie Bales",
-    "to":"Liam Edwards",
-    "type":"slept_with",
-    "group_from":"euoc",
-    "group_to":"hh"
-  },
-  {
-    "from":"Isla Calvert ",
-    "to":"Liam Edwards",
-    "type":"slept_with",
-    "group_from":"hh",
-    "group_to":"hh"
-  },
-  {
     "from":"Isla Calvert ",
     "to":"Alex Wetherill",
     "type":"dated\/dating",
@@ -1269,13 +1255,6 @@
   {
     "from":"Isla Calvert ",
     "to":"Conor Gourley",
-    "type":"pulled",
-    "group_from":"hh",
-    "group_to":"hh"
-  },
-  {
-    "from":"Tallulah Wright",
-    "to":"Liam Edwards",
     "type":"pulled",
     "group_from":"hh",
     "group_to":"hh"
@@ -1673,13 +1652,6 @@
     "group_to":"euoc"
   },
   {
-    "from":"Liam Edwards",
-    "to":"Kolbrun",
-    "type":"pulled",
-    "group_from":"hh",
-    "group_to":"hh"
-  },
-  {
     "from":"Imogen Marshall",
     "to":"Nick Smith",
     "type":"pulled",
@@ -1691,13 +1663,6 @@
     "to":"Harris Pagett",
     "type":"pulled",
     "group_from":"euoc",
-    "group_to":"hh"
-  },
-  {
-    "from":"Liam Edwards",
-    "to":"Charlotte Burton",
-    "type":"dated\/dating",
-    "group_from":"hh",
     "group_to":"hh"
   },
   {
