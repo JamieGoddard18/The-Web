@@ -1748,5 +1748,54 @@
     "type":"slept_with",
     "group_from":"o",
     "group_to":"euoc"
+  },
+  {
+    "from":"Innes Wright",
+    "to":"Katie Sandilands",
+    "type":"pulled",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Ben Gostick",
+    "to":"Daisy Rennie",
+    "type":"dated\/dating",
+    "group_from":"o",
+    "group_to":"o"
+  },
+  {
+    "from":"Sam Griffin",
+    "to":"Imogen Marshall ",
+    "type":"pulled",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Imogen Marshall ",
+    "to":"Oliver Morrison ",
+    "type":"pulled",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Ceri Griffiths ",
+    "to":"Nick Smith",
+    "type":"pulled",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Ceri Griffiths ",
+    "to":"Laurence Ward",
+    "type":"pulled",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Harris Pagett",
+    "to":"Anya Maclean",
+    "type":"pulled",
+    "group_from":"hh",
+    "group_to":"hh"
   }
 ]
