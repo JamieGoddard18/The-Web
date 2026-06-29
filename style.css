@@ -146,11 +146,11 @@ sup.trademark {
 
 /* Button Container for Save Layout button */
 .save-layout-btn-container {
-  display: none; /* Hide by default (for updating layout in development) */
+  display: flex; 
 }
 
 #save-layout-btn {
-  z-index: 1; /* Bring button to front not appearing with default z-index */ 
+  z-index: 1; 
 }
 
 .dark-mode-btn-container {

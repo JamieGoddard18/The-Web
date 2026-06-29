@@ -1436,10 +1436,10 @@
   },
   {
     "from":"Pete Molloy",
-    "to":"Eilidh Campbell",
+    "to":"Kirsty Campbell",
     "type":"pulled",
     "group_from":"o",
-    "group_to":"euoc"
+    "group_to":"o"
   },
   {
     "from":"Thomas Laraia ",
@@ -1748,5 +1748,89 @@
     "type":"slept_with",
     "group_from":"o",
     "group_to":"euoc"
+  },
+  {
+    "from":"Innes Wright",
+    "to":"Katie Sandilands",
+    "type":"dated\/dating",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Ben Gostick",
+    "to":"Daisy Rennie",
+    "type":"dated\/dating",
+    "group_from":"o",
+    "group_to":"o"
+  },
+  {
+    "from":"Sam Griffin",
+    "to":"Imogen Marshall ",
+    "type":"slept_with",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Imogen Marshall ",
+    "to":"Oliver Morrison ",
+    "type":"pulled",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Ceri Griffiths ",
+    "to":"Nick Smith",
+    "type":"pulled",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Ceri Griffiths ",
+    "to":"Laurence Ward",
+    "type":"pulled",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Harris Pagett",
+    "to":"Anya Maclean",
+    "type":"pulled",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Angus Laird",
+    "to":"Rachael Collins",
+    "type":"slept_with",
+    "group_from":"euoc",
+    "group_to":"euoc"
+  },
+  {
+    "from":"Heidi Robertshaw",
+    "to":"Bezza Pezza",
+    "type":"pulled",
+    "group_from":"hh",
+    "group_to":"o"
+  },
+  {
+    "from":"Finlay Ross-Davie",
+    "to":"Caitlin Hall",
+    "type":"dated\/dating",
+    "group_from":"hh",
+    "group_to":"hh"
+  },
+  {
+    "from":"Sam Griffin",
+    "to":"Isla Calvert ",
+    "type":"slept_with",
+    "group_from":"euoc",
+    "group_to":"hh"
+  },
+  {
+    "from":"Callum Caldwell ",
+    "to":"Catriona Kane ",
+    "type":"dated\/dating",
+    "group_from":"hh",
+    "group_to":"hh"
   }
 ]
