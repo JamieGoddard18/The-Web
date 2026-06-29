@@ -146,7 +146,7 @@ sup.trademark {
 
 /* Button Container for Save Layout button */
 .save-layout-btn-container {
-  display: none; 
+  display: flex; 
 }
 
 #save-layout-btn {
